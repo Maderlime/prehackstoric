@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+   <!-- update the version number as needed -->
+   <script defer src="/__/firebase/8.8.0/firebase-app.js"></script>
+   <!-- include only the Firebase features as you need -->
+   <script defer src="/__/firebase/8.8.0/firebase-auth.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-database.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-firestore.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-functions.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-messaging.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-storage.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-analytics.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-remote-config.js"></script>
+   <script defer src="/__/firebase/8.8.0/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+	
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Map</h2>
+							<p>View User's discoveries here!</p>
+						</header>
+
+            <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+    <div id="map"></div>
+
+
+
+            <!-- Modal -->
+            <!-- <div id="map"></div> -->
+
+					</div>
+				</div>
+
+
+
+			<!-- Footer -->
+				<footer id="footer">
+			
+					<ul class="copyright">
+						<li>&copy; Maderlime 2021. All rights reserved.</li><li>Design: HTML5 UP </li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <script src = 'map.js'></script>
+      <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjHUc0Gm0u-q0TzTtzH1RciQ1fQnuIn6w&callback=initMap"></script> -->
+      <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjHUc0Gm0u-q0TzTtzH1RciQ1fQnuIn6w&libraries=places&callback=initMap"></script> -->
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjHUc0Gm0u-q0TzTtzH1RciQ1fQnuIn6w&callback=initAutocomplete&libraries=places&v=weekly"
+        async
+      ></script>
+      <script src="https://cdn.firebase.com/libs/geofire/4.1.2/geofire.min.js"></script>
+    </body>
+
+</html>
